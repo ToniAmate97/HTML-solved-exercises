@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="es-ES">
+	<head>
+		<meta charset="UTF-8">		
+		<title> This is a webpage </title>
+	</head>
+	<body>
+		<form action="/action_page.php">
+			<input type="submit">
+			<br>
+			<label for="color">Color: </label>
+			<input type="color" name="color" id="color" value="#2fb8d0">
+			<br>
+			<label for="bday">Birthday: </label>
+			<input type="date" name="bday" id="bday">
+			<br>
+			Password: <input type="password" name="pass" placeholder="your password here"> </br>
+			<fieldset>
+				<legend>Dog:</legend>
+				Email: <input type="email" name="email" placeholder="example@email.com"> </br>
+				Url: <input type="url" name="url" placeholder="http://www.google.com"> </br>
+			</fieldset>
+			<input type="submit" value="Submit">
+			Best color:
+			<select name="colors">
+				<optgroup label="Cold">
+					<option value="blue">Blue</option>
+					<option value="green">Red</option>
+				</optgroup>
+			</select>
+			<br>
+			<input type="submit" value="Submit">
+			Best Color:
+			<input list="colors" name="color">
+			<datalist id="colors">
+				<option value="Blue"></option>
+				<option value="Red"></option>
+				<option value="Yellow"></option>
+				<option value="Green"></option>
+			</datalist>
+			<br>
+			<input type="submit" value="Submit">
+			<label for="male">Male: </label>
+			<input type="radio" name="gender" value="male" id="male" checked><br>
+			<label for="female">Female: </label>
+			<input type="radio" name="gender" value="female" id="female"><br>
+
+			<input type="checkbox" name="gender2" value="NB"> Non-binary <br>
+			<input type="checkbox" name="gender3" value="AH"> Apache Helicopter <br>	
+
+			<input type="submit" value="Submit">
+			<br>
+			Essay:
+			<br>
+			<textarea name="message" rows="10" cols="30">You need to be careful with textareas because, for example, this line is one line break from the start, so sometimes you are adding spaces or breaks without knowledge of it.</textarea>
+			<br>
+			<input type="submit" value="Submit">
+	    </form>
+	</body>
+</html>
