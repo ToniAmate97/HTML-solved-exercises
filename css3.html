@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="es-ES">
+	<head>
+		<meta charset="UTF-8">		
+		<title> This is a webpage </title>
+		<style>
+			.grid-container {
+				display: grid;
+				grid-template-columns: auto auto auto auto auto;
+				grid-template-areas: 'myArea myArea myArea myArea myArea';
+				padding:5px;
+				background-color: rgb(0,0,0);
+			}
+			.grid-container div {
+				background-color: rgb(255,255,255);
+				margin:5px;
+				font-size: 30px;
+				text-align: center;
+			}
+			.item2 {
+				grid-column: 2 /  span 2;
+			}
+			.item4 {
+				grid-column: 5;
+			}
+			.item5 {
+				grid-row:  span 3;
+			}
+			.item23 {
+				grid-area: myArea;
+				grid-row: 6;
+			}
+			.item25 {
+				grid-row: span 2;
+			}
+			.item26 {
+				grid-column: span 2;
+			}
+			.item28 {
+				grid-row: span 2;
+			}
+			.item30 {
+				grid-column: span 2;
+			}
+			.item32 {
+				grid-column: 2 / span 3;
+				grid-row: 9 / span 2;
+			}
+		</style>
+	</head>
+	<body>
+		<div class = "grid-container">
+			<div class = "item1">Degree</div>
+			<div class = "item2">Student</div>
+			<div class = "item3">Age</div>
+			<div class = "item4">Course</div>
+			<div class = "item5">Computer Science</div>
+			<div class = "item6">Pepito</div>
+			<div class = "item7">G</div>
+			<div class = "item8">22</div>
+			<div class = "item9">1r</div>
+			<div class = "item10">Jack</div>
+			<div class = "item11">Meier</div>
+			<div class = "item12">94</div>
+			<div class = "item13">????</div>
+			<div class = "item14">John</div>
+			<div class = "item15">Brown</div>
+			<div class = "item16">18</div>
+			<div class = "item17">4rt</div>
+			<div class = "item18">Electrical Engineering</div>
+			<div class = "item19">Aina</div>
+			<div class = "item20">Soler</div>
+			<div class = "item21">23</div>
+			<div class = "item22">4rt</div>
+			<div class = "item23">Random tiem</div>
+			<div class = "item24">A</div>
+			<div class = "item25">B</div>
+			<div class = "item26">C</div>
+			<div class = "item27">E</div>
+			<div class = "item28">A</div>
+			<div class = "item29">C</div>
+			<div class = "item30">D</div>
+			<div class = "item31">C</div>
+			<div class = "item32">B</div>
+			<div class = "item33">C</div>
+			<div class = "item34">A</div>
+		</div>
+	</body>
+</html>
