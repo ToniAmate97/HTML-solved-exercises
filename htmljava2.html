@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">		
+		<title>Hola</title>
+		<style> 
+		</style>
+		<script type="text/javascript">
+			function primer() {
+			    var x = document.getElementById("first");
+			    x.innerHTML = "PRIMER";
+			}
+			function segon() {
+			    var y = document.getElementsByClassName("second");
+			    y[0].innerHTML = "SEGON";
+			    y[1].innerHTML = "SEGON";
+			   /* y.forEach(function() {
+			    	this.innerHTML = "SEGON";
+			    })*/
+			}
+			function tercer() {
+			    var z = document.getElementsByName("tercer");
+			    z[0].innerHTML = "TERCER";
+			}
+		</script>
+	</head>
+	<body>
+		<div id="first">primer</div>
+		<p>Clica per canviar el valor de 'primer' a 'PRIMER'.</p>
+		<button onclick="primer()">Clica</button>
+		<br><br><br>
+		<div class="second">segon</div>
+		<div class="second">segon</div> 
+		<p>Clica per canviar els valors de 'segon' a 'SEGON'.</p>
+		<button onclick="segon()">Clica</button>
+		<br><br><br>
+		<div name = "tercer">tercer</div>
+		<p>Clica per canviar el valor de 'tercer' a 'TERCER'.</p>
+		<button onclick="tercer()">Clica</button>
+	</body>
+</html>
