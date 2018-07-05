@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">		
+	<title> Banderes </title>
+	<style> 
+	/*-------Colombia--------------*/
+		#main {
+			width: 300px;
+		    height: 200px;
+		    display: flex;
+		    flex-flow: column;
+		}
+		#main div:nth-of-type(1) {
+			flex-grow: 2;
+		}
+		#main div:nth-of-type(2) {
+			flex-grow: 1;
+		}
+		#main div:nth-of-type(3) {
+			flex-grow: 1;
+		}
+	/*-----------Chile--------*/	
+		#main2 {
+			width: 600px;
+		    height: 200px;
+		    margin-top: 200px;
+		    display: flex;
+		    border: 1px solid #c3c3c3;   
+		}
+		#main2 div:nth-of-type(1) {
+			flex-grow: 1;
+		}
+		#main2 div:nth-of-type(2) {
+			flex-grow: 2;
+		}
+
+		#main3 {
+			width: 600px;
+			height: 400px;
+			margin-top: 408px;
+			display: flex;
+			position: absolute;
+			left: 8px;
+    		top: 0px;
+			z-index: -1;
+		}
+		#main3 div:nth-of-type(1) {
+			flex-grow: 3;
+		}
+	/*----------Rep.Dominicana---------*/	
+		#main4 {
+			width: 600px;
+			height: 200px;
+			margin-top: 500px;
+			display:flex;
+		}
+
+		#main4 div:nth-of-type(1) {
+			flex-grow:1;
+		}
+		#main4 div:nth-of-type(2) {
+			flex-grow:1;
+			margin-left: 50px;
+		}
+		#main5 {
+			width: 600px;
+			height: 200px;
+			margin-top: 50px;
+			display:flex;
+		}
+
+		#main5 div:nth-of-type(1) {
+			flex-grow:1;
+		}
+		#main5 div:nth-of-type(2) {
+			flex-grow:1;
+			margin-left: 50px;
+		}
+	</style> 
+</head>
+<body>
+	<div id="main">
+		<div style="background-color: #d3de23"></div>
+		<div style="background-color: #143ab3"></div>
+		<div style="background-color: #ee2222"></div>
+	</div>
+	<div id="main2">
+		<div style="background-color: blue"></div>
+		<div style="background-color: white"></div>
+	</div>
+	<div id="main3">
+		<div style="background-color: red"></div>
+	</div>
+	<div id ="main4">
+		<div style="background-color: #09159b"></div>
+		<div style="background-color: #c80d0d"></div>
+	</div>
+	<div id="main5">
+		<div style="background-color: #c80d0d"></div>
+		<div style="background-color: #09159b"></div>
+</body>
+</html>
