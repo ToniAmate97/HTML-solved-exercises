@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MIX</title>
+		<style>
+			html,body {
+				height: 100%;
+				width: 100%;
+			}
+			#header {
+				background: rgb(0, 204, 102);
+				border-bottom: 5px solid rgb(239,239,239);
+				color: white;
+				height: 300px;
+				width: 600%;
+				padding: 14px 700px 0 18px;
+				left: 0px;
+    			top: 0px;
+				z-index: -1;
+			}
+			.Slides {
+				display: none;
+			}
+			.div {
+				margin-left: 1150px;
+				margin-top: 20px;
+				position: absolute;
+				left: 0px;
+    			top: 0px;
+				z-index: 1;
+
+			}
+			.div2 {
+				width: 100%;
+				height: 100px;
+				background-color: yellow;
+			}
+		</style>
+		<script>
+			window.onload = function () {
+				var index = 0;
+				carrousel();
+				function carrousel() {
+					var i;
+					var x = document.getElementsByClassName("Slides");
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";
+					}
+					index++;
+					if (index > x.length) {
+						index = 1;
+					}
+					x[index-1].style.display="block";
+					setTimeout(carrousel,2000);
+				}
+				
+			}
+			setInterval(clock, 1000);
+			function clock() {
+				var date = new Date();
+				var h = date.getHours();
+				var m = date.getMinutes();
+				var s = date.getSeconds();
+				m = checkTime(m);
+				s = checkTime(s);
+				document.getElementById('hola').innerHTML = h + ":" + m + ":" + s;
+			}
+			function checkTime(i) {
+				if (i < 10) {
+					i = "0" + i;
+				}
+				return i;
+			}
+			function escriuHola(paraula){
+				document.getElementById("mostra").innerHTML="hola " + paraula;
+			}
+		</script>
+	</head>
+	<body>
+		<header id="header" style="max-width: 500px">
+			<img class ="Slides" src ="red.png" style="width: 100%">
+			<img class ="Slides" src ="blue.png" style="width: 100%">
+			<img class ="Slides" src ="green.png" style="width: 100%">
+		</header>
+		<div id="hola" class ="div"></div>
+		<main>Escriu:<br>
+		<input type="text" name="entrada" onkeyup="escriuHola(this.value)"><br>
+		<div id="mostra"></div>
+		</main>
+		<footer>
+			<div class ="div2"></div>
+		</footer>
+	</body>
+</html>
