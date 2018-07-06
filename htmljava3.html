@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Carrousel</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+			.Slides {
+				display: none;
+			}
+			.div {
+				margin-left: 100px;
+			}
+		</style>
+		<script>
+			window.onload = function () {
+				var index = 0;
+				carrousel();
+				function carrousel() {
+					var i;
+					var x = document.getElementsByClassName("Slides");
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";
+					}
+					index++;
+					if (index > x.length) {
+						index = 1;
+					}
+					x[index-1].style.display="block";
+					setTimeout(carrousel,2000);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h2 style="margin-left: 100px">Carrousel</h2>
+		<div class ="div" style="max-width: 500px">
+			<img class ="Slides" src ="red.png" style="width: 100%">
+			<img class ="Slides" src ="blue.png" style="width: 100%">
+			<img class ="Slides" src ="green.png" style="width: 100%">
+		</div>
+		
+	</body>
+</html>
